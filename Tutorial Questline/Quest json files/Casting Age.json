@@ -1,0 +1,1166 @@
+{
+  "name": "Casting Age",
+  "description": "The age where you will learn how to cast metals into better tools and learn other technologies that make it easier to survive ",
+  "quests": [
+    {
+      "name": "Out of the stone age",
+      "description": "Where you learn the secrets of basic metalurgy",
+      "x": 34,
+      "y": 20,
+      "icon": {
+        "id": "terrafirmacraft:item.Mold",
+        "damage": 1
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "No stone unturned",
+          "longDescription": "The first metal you can make tools from is likely copper. You can find nuggets of metal on the ground, which indicates there is at least one ore block within 40 blocks of surface in that chunk. If you have really good luck you can skip right past copper tools and craft bronze alloy tools.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Small Ore"
+              },
+              "required": 10,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Casts",
+          "longDescription": "Clay can be used to make casts. Casts are used to form tools from metals like copper and bronze",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Saw Mold"
+              }
+            },
+            {
+              "item": {
+                "id": "terrafirmacraft:item.ProPick Mold"
+              }
+            },
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Pick Mold"
+              }
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Smelting ores in a pitkiln",
+          "longDescription": "You now have enough nuggets to make one metal tool. Each nugget is worth 10 units and it takes 100 units to fill one ingot or tool mould. Place the nuggets into a ceramic vessel and fire it with the three molds. If you are making alloy be sure you have the right ratios. If you are wrong you\u0027ll just get your nuggets back. When it is done take out the saw mold and ceramic vessel with liquid copper. Right click to open the vessel and place the mold inside. Once the mold is full, place it in your crafting space to remove it from the mould. The mould is destroyed and you will get a saw blade. Craft a complete saw using the blade over a stick. The saw is very useful at this point because it allows you to cut logs into lumber, which is used to craft a number of wooden items. Your first craft should be turning 4 lumber into planks and 4 planks into a crafting table. This will expand your personal crafting interface. This task accepts copper or any bronze saw.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Copper Saw"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "amount": 4
+        },
+        {
+          "id": "terrafirmacraft:item.Log",
+          "damage": 3,
+          "amount": 4
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "The Art of Mining",
+      "description": "Where we learned to find ore deposites and mine the depths without being crushed by falling rocks",
+      "x": 97,
+      "y": 20,
+      "icon": {
+        "id": "terrafirmacraft:item.Copper Pick"
+      },
+      "requirements": [
+        0
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Miners Tools",
+          "longDescription": "Metals and Minerals are found throughout the world in veins and clusters. It is far easier to find most early deposits by using a prospectors pick from the surface. If you right click with the prospectors pick it will search around that point for traces of ore and it will tell you how much was found. There is a possibility of getting false readings. This task accepts either copper or any bronze tool.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Copper Pick"
+              },
+              "precision": "ORE_DICTIONARY"
+            },
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Copper ProPick"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Preventing Cave-ins",
+          "longDescription": "As you may have noticed by now, most things are effected by gravity. When you mine raw stone there is a chance that you will cause a cave in. To prevent cave ins place two supports that are at least 3 high with one horizontal beam connecting them. This will will prevent cave-ins 1 block above and below and 4 blocks out horizontally from the horizontal beams. The vertical beams offer no support.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:WoodSupportV",
+                "damage": 3
+              },
+              "required": 4,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:WoodSupportV",
+          "damage": 3,
+          "amount": 16
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ],
+      "rewardChoice": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 49,
+          "amount": 8
+        },
+        {
+          "id": "terrafirmacraft:WoodSupportV",
+          "damage": 3,
+          "amount": 16
+        }
+      ]
+    },
+    {
+      "name": "The wonders of wood",
+      "description": "Where we learned how to use the saw to make things out of logs",
+      "x": 34,
+      "y": 107,
+      "icon": {
+        "id": "terrafirmacraft:Chest TFC",
+        "damage": 3
+      },
+      "requirements": [
+        0
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "longDescription": "Now that you have a saw, you can finally craft chests. They are not that big but are better than anything you have sofar.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:Chest TFC",
+                "damage": 3
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:Chest TFC",
+          "damage": 3
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Bronze",
+      "description": "Where you learned to make a useful alloy of tin and copper",
+      "x": 258,
+      "y": 18,
+      "icon": {
+        "id": "terrafirmacraft:item.Bronze Ingot"
+      },
+      "requirements": [
+        1
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Mixing bronze",
+          "longDescription": "A mixture of copper and other metals make a stronger alloy. There are 3 kinds of bronze alloy available. The differences between the 3 are minor so any will do. Bronze is an alloy of Copper and Cassiterite(tin) with a ratio between 88% copper to 8% tin and 92% copper to 12% tin. For example 450 units of copper and 50 units of tin it will give you 500 units of bronze. Bismuth Bronze is an alloy of Copper, Bismuth, and Sphalerite(zinc)with a minimum of 20% zinc, 50% copper, and 10% and its maximum of 30% zinc, 70% copper, and 20% bismuth. For example 100 units of sphalerite(zinc), 250 units of copper, and 50 units of bismuth together you should get 400 units of bismuth bronze. Black Bronze is an alloy of Copper, Gold and Silver with a ratio between 10% gold, 50% copper, and 10% silver and 25% gold, 70% copper, and 25% silver will get you black bronze. For example 50 units of gold, 100 units of copper, and 50 units of silver will make 200 units of black bronze. This task excepts any bronze alloy.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Bronze Ingot"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "amount": 8
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ],
+      "rewardChoice": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 5,
+          "amount": 8
+        },
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "amount": 8
+        },
+        {
+          "id": "HardcoreQuesting:hearts"
+        }
+      ]
+    },
+    {
+      "name": "Basic Smithing",
+      "description": "Where we learn to make tools with an anvil",
+      "x": 195,
+      "y": 121,
+      "icon": {
+        "id": "terrafirmacraft:Anvil",
+        "damage": 1
+      },
+      "requirements": [
+        5,
+        12
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Collecting copper",
+          "longDescription": "You will need to collect enough copper to make 14 ingots.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Copper Ingot"
+              },
+              "required": 14,
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Doubling your ingots",
+          "longDescription": "Once you have enough ingots heat up your ingots enough in the forge to weld them together. But to do so you\u0027ll need a stone anvil. Right click on the top of a block of raw igneous stone with a hammer. Access the GUI and place a hammer and flux in their slots. This will allow you to weld copper ingots that are hot enough.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Copper Double Ingot"
+              },
+              "required": 7,
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Craft a Copper Anvil",
+          "longDescription": "Now all you have to do is craft the anvil. Just remember before you do that its heavy, so if you want to carry it around it needs to go on your back. You need to use a Copper Anvil to work copper ingots. If you want to work bronze you will need to first craft a bronze anvil. Don\u0027t worry your copper anvil can be melted down in a crucible when you are done with it.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:Anvil",
+                "damage": 1
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:item.Powder",
+          "amount": 30
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "The Forge",
+      "description": "Where we learned to heat metal",
+      "x": 266,
+      "y": 93,
+      "icon": {
+        "id": "Mekanism:BasicBlock",
+        "damage": 3
+      },
+      "requirements": [
+        1,
+        10,
+        14
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Building a the forge",
+          "longDescription": "The forge multiblock in its smallest form is just 4 non flamable blocks on the cardinal directions with 7 charcoal placed in the hole between them. If the block under the charcoal is stone it will make the forge when you light the charcoal with a firestarter.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.coal",
+                "damage": 1
+              },
+              "required": 7
+            },
+            {
+              "item": {
+                "id": "terrafirmacraft:StoneIgExBrick",
+                "damage": 1
+              },
+              "required": 4,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:StoneIgExBrick",
+          "damage": 1,
+          "amount": 8
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ],
+      "rewardChoice": [
+        {
+          "id": "terrafirmacraft:item.ItemStoneBrick",
+          "damage": 12,
+          "amount": 20
+        },
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "amount": 8
+        },
+        {
+          "id": "HardcoreQuesting:hearts"
+        }
+      ]
+    },
+    {
+      "name": "Barrels",
+      "description": "With so many uses",
+      "x": 35,
+      "y": 159,
+      "icon": {
+        "id": "terrafirmacraft:Barrel",
+        "damage": 3
+      },
+      "requirements": [
+        2
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "longDescription": "Barrels are used for many things. They can hold more than a large vessel and is useful for making leather and alchohol. Barrels can also be carried, sealed, on your back.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:Barrel",
+                "damage": 3
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:Barrel",
+          "damage": 3
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Making Bread",
+      "description": "Where you learned to make bread",
+      "x": 105,
+      "y": 130,
+      "icon": {
+        "id": "terrafirmacraft:item.Rye Bread",
+        "nbt": "{foodWeight:57.6f,foodDecay:0.15591253f,Processing Tag:{Cooked:634.4706f,CookedProfile:[10,-15,-7,7,-3,],FuelProfile:[-15,12,0,0,0,]},decayTimer:2868}"
+      },
+      "requirements": [
+        8,
+        9
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Grind Grain into Flour",
+          "longDescription": "With the quern you can now turn the rye grain from earlier into rye flour. Place the rye grain into the quern on the left and close the invetory. then right click on the wooden handle to grind the rye into flour. Place the flour and a bucket of fresh water in your crafting grid to make flour. Cook the flour in a fire pit to make bread.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Rye Ground",
+                "nbt": "{foodWeight:160.0f,foodDecay:-24.0f,decayTimer:2227}"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Making Dough",
+          "longDescription": "Now that you have flour, combine it with a fresh water bucket to make dough.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Rye Dough",
+                "nbt": "{foodWeight:160.0f,foodDecay:-24.0f,decayTimer:2381}"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Raising Bread",
+          "longDescription": "Cook the dough in a firepit to turn it into bread.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Rye Bread",
+                "nbt": "{foodWeight:160.0f,foodDecay:-24.0f,decayTimer:2381}"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 31
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ],
+      "rewardChoice": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 31
+        },
+        {
+          "id": "terrafirmacraft:item.Powder",
+          "damage": 9,
+          "amount": 2
+        },
+        {
+          "id": "HardcoreQuesting:hearts"
+        }
+      ]
+    },
+    {
+      "name": "Wooden Bucket",
+      "description": "Where we learned to pick up water",
+      "x": 67,
+      "y": 104,
+      "icon": {
+        "id": "terrafirmacraft:item.Wooden Bucket Empty"
+      },
+      "requirements": [
+        2
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Wood Bucket",
+          "longDescription": "The Wooden bucket is a simple solution to transfer cool liquids such as water, milk, and vinegar. It is unable to place source blocks",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Wooden Bucket Empty"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Moving Fresh Water",
+          "longDescription": "You can use a bucket to fill a barrel with fresh water or to make dough from flour.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Wooden Bucket Water"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:item.Log",
+          "damage": 3,
+          "amount": 8
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Grinding with the Quern",
+      "description": "Where we learned how to grind things to dust",
+      "x": 83,
+      "y": 82,
+      "icon": {
+        "id": "terrafirmacraft:Quern"
+      },
+      "requirements": [
+        1,
+        17
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Quern-Stone",
+          "longDescription": "Quern is a stone tool for hand-grinding a wide variety of materials. You will need the stationary quern block and the handstone which goes inside on the topmost slot. To craft the quern you will need to smooth stone with a chisel. To craft the handstand you will need to get stone blocks. To do so you must mine around a stone block until you remove all other connected blocks. When the last block is removed it will drop as a stone block.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:Quern"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Quern"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Grinding Flour",
+          "longDescription": "With the quern you can now turn the rye grain from earlier into rye flour. Place the rye grain into the quern on the left and close the invetory. then right click on the wooden handle to grind the rye into flour.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Rye Ground",
+                "nbt": "{foodWeight:28.8f,foodDecay:-18.450886f,decayTimer:2781}"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Charcoal Pits",
+      "description": "Where we learned to make a better fuel to burn",
+      "x": 280,
+      "y": 69,
+      "icon": {
+        "id": "terrafirmacraft:item.coal",
+        "damage": 1
+      },
+      "tasks": [
+        {
+          "type": "DETECT",
+          "longDescription": "The charcoal pit is constructed by creating a covered strucuture of log piles. Log piles are formed by Shift Right clicking the ground with a log. You will need to have at least four logs in a pile. if you drop a torch on the log pile it will eventually catch fire. Cover this up so it is not exposed to air and it will turn into charcoal over the next 18 minecraft hours.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.coal",
+                "damage": 1
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:item.Log",
+          "amount": 16
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Tanning",
+      "description": "Where we learned to turn raw hides into leather",
+      "x": 134,
+      "y": 191,
+      "icon": {
+        "id": "terrafirmacraft:item.TFC Leather"
+      },
+      "requirements": [
+        6,
+        12
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Hides",
+          "longDescription": "There are three sizes of skins. Find one of each.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Hide"
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Hide",
+                "damage": 1
+              },
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Hide",
+                "damage": 2
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Denaturing Hides",
+          "longDescription": "Place your large hide in a barrel of limewater and seal it. It will turn it into a soaked hide in a few hours.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Soaked Hide",
+                "damage": 2
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Scrape the hide",
+          "longDescription": "Now that your hide is denatured, you can easily scrape the hide on a log with your knife, resulting in a scrapped hide.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Scraped Hide",
+                "damage": 2
+              },
+              "precision": "NBT_FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Soak the prepared hide",
+          "longDescription": "The next step is to place the scrapped hide in a barrel of water for a few hours. When it is done you will get a prepared hide.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Prep Hide",
+                "damage": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Immerse in Tannin",
+          "longDescription": "The last step is to place the prepared hide in a barrel of tannin for a few hours. When it is done you will get leather.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.TFC Leather"
+              },
+              "required": 3
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:item.TFC Leather",
+          "amount": 6
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Flux Powder",
+      "description": "Where we learned how to make use of powdered rocks",
+      "x": 129,
+      "y": 103,
+      "icon": {
+        "id": "terrafirmacraft:item.Powder"
+      },
+      "requirements": [
+        1
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "The many uses of Flux",
+          "longDescription": "Flux powder used when weilding in the anvil as well as to create limewater. Flux is crafted by crushing chalk, dolomite, limestone, marble, or borax with a hammer.  ",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Powder"
+              },
+              "required": 16
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:item.Powder",
+          "amount": 32
+        },
+        {
+          "id": "terrafirmacraft:item.LooseRock",
+          "damage": 12,
+          "amount": 5
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Sandwichs",
+      "description": "Making better food",
+      "x": 67,
+      "y": 141,
+      "icon": {
+        "id": "terrafirmacraft:item.Sandwich",
+        "damage": 3,
+        "nbt": "{foodWeight:7.0f,foodDecay:0.017744305f,FG:[30026,2,10001,-1,-1,],tasteSalty:10,tasteBitter:22,decayTimer:2911,tasteUmami:81,tasteSour:6,decayRate:2.0f,tasteSweet:12,mealSkill:0}"
+      },
+      "requirements": [
+        7
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Putting food together",
+          "longDescription": "You can prepare food on any log or stone surface. To do so right click it with a knife. Place the bread, fish, and potato supplied from the last quest into the food prep and click create to make a sandwich. ",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Sandwich",
+                "damage": 3,
+                "nbt": "{foodWeight:7.0f,foodDecay:-24.0f,FG:[30026,2,10001,-1,-1,],tasteSalty:10,tasteBitter:22,decayTimer:2886,tasteUmami:81,tasteSour:6,decayRate:2.0f,tasteSweet:12,mealSkill:0}"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 31
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ],
+      "rewardChoice": [
+        {
+          "id": "terrafirmacraft:item.LooseRock",
+          "damage": 5,
+          "amount": 4
+        },
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 31
+        },
+        {
+          "id": "HardcoreQuesting:hearts"
+        }
+      ]
+    },
+    {
+      "name": "Making Bricks",
+      "description": "Where we learned to make bricks.",
+      "x": 200,
+      "y": 182,
+      "icon": {
+        "id": "terrafirmacraft:StoneIgExBrick",
+        "damage": 1
+      },
+      "requirements": [
+        12
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Bricks and Mortar",
+          "longDescription": "Bricks are made of chiseled stone and mortar.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.ItemStoneBrick",
+                "damage": 12
+              },
+              "required": 5,
+              "precision": "ORE_DICTIONARY"
+            },
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Mortar"
+              },
+              "required": 4
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "What bricks are for",
+          "longDescription": "Bricks are not effected by gravity, so they are useful for making multiblock structures and houses.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:StoneIgExBrick",
+                "damage": 1
+              },
+              "required": 4
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:StoneIgExBrick",
+          "damage": 1,
+          "amount": 4
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Armor Smithing",
+      "description": "Where we learned to smith armor",
+      "x": 209,
+      "y": 89,
+      "icon": {
+        "id": "terrafirmacraft:item.Copper Helmet"
+      },
+      "requirements": [
+        4
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Metal Sheats",
+          "longDescription": "To start you will need to work a copper double ingot into a metal sheet.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Copper Sheet"
+              },
+              "required": 2,
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Smithing an unfinished helmet",
+          "longDescription": "Now that you have a copper sheet you can work it into a copper helmet. This is the first of three stages in making a helmet.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Copper Unfinished Helmet"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Weilding some more metal on",
+          "longDescription": "Now that you have an unfinished helmet, you need to weild it with the other copper sheet.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Copper Unfinished Helmet",
+                "damage": 1,
+                "nbt": "{itemCraftingValue:0s}"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Finishing the helm",
+          "longDescription": "The last phase is to take your helmet back to the anvil and work it into the finished helmet.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Copper Helmet"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "amount": 8
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Advanced Weapons",
+      "description": "Where we learned to defend ourselves with a better offense",
+      "x": 175,
+      "y": 90,
+      "icon": {
+        "id": "terrafirmacraft:item.Copper Sword"
+      },
+      "requirements": [
+        4
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Smithing weapons",
+          "longDescription": "Now that you have an anvil, you can start working metal directly into weapons. Weapons smithed on an anvil have increased durability compared based on your smithing skill. To start you will need two double ingots and one single ingot. ",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Copper Ingot"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Copper Double Ingot"
+              },
+              "required": 2,
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Swords for slashing",
+          "longDescription": "The sword is a greate weapon against the shambling zombie hordes. To forge a sword, you need to start with a double ignot. Work the heated ingot on your anvil for a bit and you will have a fine sword. like axes, swords do slashing damage.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Copper Sword"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Maces for smashing",
+          "longDescription": "A mace is a weapon that does crushing damage. With a mace in hand you can now smash those pesky skeletons into piles of dust.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Copper Mace"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Javelins for peircing",
+          "longDescription": "The stone age Javelin is reborn. Metal javelins last longer and do more damage.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Copper Javelin"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "amount": 8
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Hammer and Chisel",
+      "description": "Where we learned to chisel stone",
+      "x": 65,
+      "y": 48,
+      "icon": {
+        "id": "terrafirmacraft:item.Copper Chisel"
+      },
+      "requirements": [
+        1
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Chisels",
+          "longDescription": "The chisel is a useful tool for smoothing stone and making bricks. To smooth stone you will need a chisel and any hammer on your hot bar. right click the stone with the chisel and you can pick it up with a pickaxe. Smoothed stones are not effected by gravity. There are 4 chisel modes, you will have to rebind the mod button. Smooth mode smooths raw stone. Stair mode will remove 1/8 of the block at a time. Slab mode will shave 1/8 slice off block. Detailed mode allows you to chip away tiny bits. Be aware you can\u0027t chisel any raw stone that has 2 or more pieces of raw stone above it. This task accepts copper or any bronze chisel",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Copper Chisel"
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:StoneIgEx",
+          "damage": 2
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ],
+      "rewardChoice": [
+        {
+          "id": "terrafirmacraft:StoneIgEx",
+          "damage": 1,
+          "amount": 2
+        },
+        {
+          "id": "terrafirmacraft:StoneSed",
+          "amount": 2
+        },
+        {
+          "id": "HardcoreQuesting:hearts"
+        }
+      ]
+    },
+    {
+      "name": "Bronze Anvil",
+      "description": "Where we learned more about working with anvils",
+      "x": 293,
+      "y": 18,
+      "icon": {
+        "id": "terrafirmacraft:Anvil",
+        "damage": 2
+      },
+      "requirements": [
+        3,
+        4
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Working with better metals",
+          "longDescription": "With a copper anvil, you can now weild together bronze ingots. You will need to do this first, since you need a bronze anvil to do anything else with bronze.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Bronze Double Ingot"
+              },
+              "required": 7,
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        },
+        {
+          "type": "CRAFT",
+          "description": "Bronze Anvil",
+          "longDescription": "Now you can make a bronze anvil. With it you will be able to work bronze into a veriety of items. You will need the bronze anvil to weild together wrought iron ingots. This trend continues through the anvil tiers, where each tier of anvil can work metal of that tier and weild together metals of the tier above it.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:Anvil",
+                "damage": 2
+              },
+              "precision": "ORE_DICTIONARY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "amount": 8
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ]
+    }
+  ]
+}
