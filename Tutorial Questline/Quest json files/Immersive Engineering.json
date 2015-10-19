@@ -1,0 +1,388 @@
+{
+  "name": "Immersive Engineering",
+  "description": "Where we learned to make impressive multiblock machines to process and harvest materials. [Incomplete.] Will be unlocked soon.",
+  "quests": [
+    {
+      "name": "Immersed In Engineering",
+      "description": "Where we learned of a guidebook to fantatic multiblock machines",
+      "x": 22,
+      "y": 8,
+      "icon": {
+        "id": "ImmersiveEngineering:tool",
+        "damage": 3
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Engineering Guide",
+          "longDescription": "You can craft your immersive engineering handbook with a lever and a book. Hemp seeds are dropped by zombies. This questline is incomplete.",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:tool",
+                "damage": 3
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ImmersiveEngineering:seed",
+          "amount": 4
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Engineer\u0027s Hammer",
+      "description": "Where we learn of a critical tool for immersive engineering",
+      "x": 78,
+      "y": 23,
+      "icon": {
+        "id": "ImmersiveEngineering:tool"
+      },
+      "requirements": [
+        0
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "A hammer with many uses",
+          "longDescription": "The engineers hammer is pivital to forming the mutiblock structures in immersive engineering. So this is the first thing you should make. This quest line is incomplete.",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:tool"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 10,
+          "amount": 8
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ],
+      "rewardChoice": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 10,
+          "amount": 8
+        },
+        {
+          "id": "terrafirmacraft:item.coal",
+          "damage": 1,
+          "amount": 32
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Coke Oven",
+      "description": "Where we learned to make coal coke and charcoal.",
+      "x": 117,
+      "y": 19,
+      "icon": {
+        "id": "ImmersiveEngineering:stoneDecoration",
+        "damage": 1
+      },
+      "requirements": [
+        1
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Coke oven",
+          "longDescription": "The coke oven is made of 27 Immersive Engineering coke oven bricks. Place them in a 3 x 3 x 3 space and right click on the center with your engineers hammer. This Quest line is unfinished.",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:stoneDecoration",
+                "damage": 1
+              },
+              "required": 27
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Low capacity power storage",
+      "description": "Unnamed quest",
+      "x": 32,
+      "y": 85,
+      "icon": {
+        "id": "ImmersiveEngineering:metalDevice",
+        "damage": 1
+      },
+      "requirements": [
+        9
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "items": []
+        }
+      ]
+    },
+    {
+      "name": "Early Power Generation",
+      "description": "Unnamed quest",
+      "x": 136,
+      "y": 84,
+      "icon": {
+        "id": "ImmersiveEngineering:metalDevice",
+        "damage": 9
+      },
+      "requirements": [
+        9
+      ],
+      "tasks": []
+    },
+    {
+      "name": "Crusher",
+      "description": "Unnamed quest",
+      "x": 209,
+      "y": 62,
+      "icon": {
+        "id": "ImmersiveEngineering:metal",
+        "damage": 8
+      },
+      "requirements": [
+        11
+      ],
+      "tasks": []
+    },
+    {
+      "name": "Mining Drill",
+      "description": "Unnamed quest",
+      "x": 272,
+      "y": 177,
+      "icon": {
+        "id": "ImmersiveEngineering:drill"
+      },
+      "requirements": [
+        8,
+        16
+      ],
+      "tasks": []
+    },
+    {
+      "name": "Revolver",
+      "description": "Unnamed quest",
+      "x": 288,
+      "y": 45,
+      "icon": {
+        "id": "ImmersiveEngineering:revolver"
+      },
+      "requirements": [
+        8
+      ],
+      "tasks": []
+    },
+    {
+      "name": "Engineers Workbench",
+      "description": "Where we learned to make a bench to customize our gear",
+      "x": 267,
+      "y": 16,
+      "icon": {
+        "id": "ImmersiveEngineering:woodenDevice",
+        "damage": 5
+      },
+      "requirements": [
+        9
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Work bench",
+          "longDescription": "The workbench is used to customize immersive engineering tools.",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:woodenDevice",
+                "damage": 5
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ImmersiveEngineering:woodenDecoration",
+          "amount": 4
+        }
+      ]
+    },
+    {
+      "name": "Treated Wood",
+      "description": "Where we learned to make industrial grade wood",
+      "x": 200,
+      "y": 18,
+      "icon": {
+        "id": "ImmersiveEngineering:woodenDecoration"
+      },
+      "requirements": [
+        2
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Treated Wood",
+          "longDescription": "Wood treated with creasote oil is one of the main ingredients in building immersive engineering machines. It may also be useful in building since it is not flamable.",
+          "items": [
+            {
+              "item": {
+                "id": "ImmersiveEngineering:woodenDecoration"
+              },
+              "required": 8
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "ImmersiveEngineering:woodenDecoration",
+          "amount": 8
+        }
+      ]
+    },
+    {
+      "name": "Conveyor Belts",
+      "description": "Unnamed quest",
+      "x": 30,
+      "y": 53,
+      "icon": {
+        "id": "ImmersiveEngineering:metalDevice",
+        "damage": 11
+      },
+      "requirements": [
+        0
+      ],
+      "tasks": []
+    },
+    {
+      "name": "External heater",
+      "description": "Unnamed quest",
+      "x": 179,
+      "y": 87,
+      "icon": {
+        "id": "ImmersiveEngineering:metalDevice",
+        "damage": 12
+      },
+      "requirements": [
+        4
+      ],
+      "tasks": []
+    },
+    {
+      "name": "Medium capacity storage",
+      "description": "Unnamed quest",
+      "x": 32,
+      "y": 129,
+      "icon": {
+        "id": "ImmersiveEngineering:metalDevice",
+        "damage": 3
+      },
+      "requirements": [
+        3
+      ],
+      "tasks": []
+    },
+    {
+      "name": "High capacity power storage",
+      "description": "Unnamed quest",
+      "x": 32,
+      "y": 171,
+      "icon": {
+        "id": "ImmersiveEngineering:metalDevice",
+        "damage": 7
+      },
+      "requirements": [
+        12
+      ],
+      "tasks": []
+    },
+    {
+      "name": "More power Generators",
+      "description": "Unnamed quest",
+      "x": 89,
+      "y": 99,
+      "icon": {
+        "id": "ImmersiveEngineering:metalDevice",
+        "damage": 10
+      },
+      "requirements": [
+        4
+      ],
+      "tasks": []
+    },
+    {
+      "name": "Biodeseal Generator",
+      "description": "Unnamed quest",
+      "x": 98,
+      "y": 164,
+      "icon": {
+        "id": "ImmersiveEngineering:metalMultiblock",
+        "damage": 2
+      },
+      "requirements": [
+        16
+      ],
+      "tasks": []
+    },
+    {
+      "name": "Biodeasel",
+      "description": "Unnamed quest",
+      "x": 134,
+      "y": 147,
+      "icon": {
+        "id": "ImmersiveEngineering:fluidContainers",
+        "damage": 6
+      },
+      "requirements": [
+        4
+      ],
+      "tasks": []
+    },
+    {
+      "name": "Excavator",
+      "description": "Where we learned to make a big machine mine for us",
+      "x": 119,
+      "y": 189,
+      "icon": {
+        "id": "minecraft:iron_ore"
+      },
+      "requirements": [
+        15
+      ],
+      "tasks": []
+    },
+    {
+      "name": "Arc Frunace",
+      "description": "Where we learned to make a advanced machine to smelt ore",
+      "x": 67,
+      "y": 189,
+      "icon": {
+        "id": "ImmersiveEngineering:graphiteElectrode"
+      },
+      "requirements": [
+        15
+      ],
+      "tasks": []
+    }
+  ]
+}

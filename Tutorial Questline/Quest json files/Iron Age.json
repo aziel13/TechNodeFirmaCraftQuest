@@ -1,0 +1,817 @@
+{
+  "name": "Iron Age",
+  "description": "The age where you master the skills of smelting and working with iron and iron based alloys.",
+  "quests": [
+    {
+      "name": "Bloomery",
+      "description": "Where we learned the secret to smelting iron",
+      "x": 39,
+      "y": 14,
+      "icon": {
+        "id": "terrafirmacraft:item.Raw Iron Bloom",
+        "damage": 400
+      },
+      "parentRequirement": 1,
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Making a bloomery",
+          "longDescription": "To make wrought iron you will need to make a bloomery. A bloomery is a multiblock structure. To build it place a 3x3 set of bricks on the ground, then build up one but leave in the inside and one outside block free. Next add one block on each cardinal side (nswe). This is the smallest build for a bloomery. To make it larger you can add up to two more rings to the top. Place 8 charcoal in the bottom then throw up to 20 charcoal and 20 ore in from the top. Afterwards light the bloomery with a fire-starter. In a few hours you will have a raw bloom. ",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:EarlyBloomery"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Working the bloom",
+          "longDescription": "Once you have a raw bloom from the bloomer, the first step is to heat it up in your furnace until it is hot enough to be worked. After this hammer the bloom into a refined bloom. Next you will need to split the bloom. The last step is to either hammer each 100 unit bar into a wrought iron bar or to melt them down in the crucible.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Wrought Iron Ingot"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 10,
+          "amount": 8
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ],
+      "rewardChoice": [
+        {
+          "id": "terrafirmacraft:item.coal",
+          "damage": 1,
+          "amount": 32
+        },
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 10,
+          "amount": 8
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Bellows",
+      "description": "Where we learned how to make the forge hotter",
+      "x": 22,
+      "y": 131,
+      "icon": {
+        "id": "terrafirmacraft:Bellows"
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Blowing alot of hot air",
+          "longDescription": "The bellows can be placed to the left or right of the forge. Right clicking will cause the forge to increase the heat temporarily on an active forge.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:Bellows"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:Bellows"
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Crucible",
+      "description": "Where we learned that we can melt metals over a forge.",
+      "x": 21,
+      "y": 170,
+      "icon": {
+        "id": "terrafirmacraft:Crucible"
+      },
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Fire Clay",
+          "longDescription": "Fire clay is a useful material, since it makes ceramics that are resistant to heat.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Clay",
+                "damage": 1
+              },
+              "required": 5,
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Advanced metal melting",
+          "longDescription": "The crucible can be placed on top of your forge. When heated up you can place most metals inside to melt them. This is useful for mixing alloys.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:Crucible"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:item.Clay",
+          "damage": 1,
+          "amount": 5
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ]
+    },
+    {
+      "name": "Black Steel",
+      "description": "Where we learned to make steel stronger",
+      "x": 231,
+      "y": 12,
+      "icon": {
+        "id": "terrafirmacraft:item.Black Steel Ingot"
+      },
+      "requirements": [
+        6
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Weak Steel",
+          "longDescription": "To make single ingot of black steel, you will first need  to get a pig iron ingot and a weak steel ingot. you will need to make an alloy of steel, nickel, and black bronze in the cruicble. the ratio is 50% steel, 15% Garnierite(nickel), and 15% black bronze minimum and 70% steel, 25% nickel, and 25% black bronze. So for example if you put in 500 units of steel, 200 units of nickel, and 200 units of black bronze you will get 900 units of weak steel.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Weak Steel Ingot"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Pig Iron Ingot"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Refine the black steel",
+          "longDescription": "Now you need to weld the pig iron and the weak steel ingots together. After this it needs to be worked on your anvil to remove impurities.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Black Steel Ingot"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        },
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 10,
+          "amount": 8
+        }
+      ],
+      "rewardChoice": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 10,
+          "amount": 8
+        },
+        {
+          "id": "terrafirmacraft:item.coal",
+          "damage": 1,
+          "amount": 64
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Blue Steel",
+      "description": "Where we learned to make heat resistant steel",
+      "x": 291,
+      "y": 12,
+      "icon": {
+        "id": "terrafirmacraft:item.Blue Steel Ingot"
+      },
+      "requirements": [
+        3
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Weak Blue Steel",
+          "longDescription": "To make blue steel you will need to start by making weak blue steel in a crucible. Weak blue steel is an alloy of black steel, bismuth bronze, sterling silver, and steel. The ratio is 50% black steel, 10% bismuth bronze, 10% sterling silver, and 20% steel at the minimum and 55% black steel, 15% bismuth bronze, 15% sterling silver, and 25% steel at maximum. So for example 700 units of black steel, 200 units of bismuth bronze,  200 units of sterling silver, and 300 units of steel will get you 1400 units of weak blue steel. ",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Weak Blue Steel Ingot"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Refine the blue steel",
+          "longDescription": "Now you need to weld the black steel and the weak blue steel ingots together. After this it needs to be worked on your anvil to remove impurities.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Blue Steel Ingot"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 45,
+          "amount": 8
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ],
+      "rewardChoice": [
+        {
+          "id": "terrafirmacraft:item.Sterling Silver Ingot",
+          "amount": 8
+        },
+        {
+          "id": "terrafirmacraft:item.Bismuth Bronze Ingot",
+          "amount": 8
+        },
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 45,
+          "amount": 8
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Red Steel",
+      "description": "Where we learned to make currosition and pressure resistant steel",
+      "x": 231,
+      "y": 45,
+      "icon": {
+        "id": "terrafirmacraft:item.Red Steel Ingot"
+      },
+      "requirements": [
+        3
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Weak Red Steel",
+          "longDescription": "To make red steel you will need to start by making weak red steel in a crucible. Weak red steel is an alloy of black steel, rose gold, brass, and steel. The ratio is 50% black steel, 10% rose gold, 10% brass, and 20% steel at the minimum and 55% black steel, 15% rose gold, 15% brass, and 25% steel at maximum. So for example 700 units of black steel, 200 units of rose gold,  200 units of brass, and 300 units of steel will get you 1400 units of weak red steel. ",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Weak Red Steel Ingot"
+              },
+              "precision": "FUZZY"
+            },
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Black Steel Ingot"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Refine the red steel",
+          "longDescription": "Now you need to weld the black steel and the weak red steel ingots together. After this it needs to be worked on your anvil to remove impurities.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Red Steel Ingot"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 45,
+          "amount": 8
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ],
+      "rewardChoice": [
+        {
+          "id": "terrafirmacraft:item.Brass Ingot",
+          "amount": 8
+        },
+        {
+          "id": "terrafirmacraft:item.Rose Gold Ingot",
+          "amount": 8
+        },
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 45,
+          "amount": 8
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Blast Furnace",
+      "description": "Where we learned to smelt iron at higher temperatures to make pig iron",
+      "x": 183,
+      "y": 11,
+      "icon": {
+        "id": "terrafirmacraft:Bloomery"
+      },
+      "requirements": [
+        0
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Blast furnace ",
+          "longDescription": "The blast furnance is a multiblock structure used to turn iron ore into pig iron�?.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:Bloomery"
+              }
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Building the Chimney",
+          "longDescription": "The first part of the blast furnace you will need to build is its chimney. To start place four fire brick blocks in a cross shape around an empty block. Make sure to leave two blocks empty underneath where the blast furnace and cruicible will go. Next Place a wrought iron sheet on each side of the chimney blocks other than the top or bottom. You can extend the size of the chimney up to 6 high.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:FireBrick"
+              },
+              "required": 4
+            },
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Wrought Iron Sheet"
+              },
+              "required": 12
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Running the furnace",
+          "longDescription": "To finish the blast furnace place a cruicble and the blast furnace on top, one block �?bellow the chimney. Next put a bellows pointing twards the blast furnace. Now drop 4 charcoal, 4 iron ore, and 4 flux powder into the chimney. Light the blast furnace. When the furnace is white hot start using the bellows to increase the heat of the furnace until all the ore melts.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:Crucible"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Processing the Pig Iron",
+          "longDescription": "Now that you have a cruicible full of pig iron, you will need to process it. Like with iron, you will need to pour out the iron from the cruicble into a ingot mold and then when its solidified, hammer out the impurities on your anvil.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Steel Ingot"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        },
+        {
+          "id": "terrafirmacraft:item.coal",
+          "damage": 1,
+          "amount": 32
+        }
+      ],
+      "rewardChoice": [
+        {
+          "id": "terrafirmacraft:FireBrick",
+          "amount": 2
+        },
+        {
+          "id": "terrafirmacraft:item.Wrought Iron Sheet",
+          "amount": 6
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 1
+        }
+      ]
+    },
+    {
+      "name": "Metal Buckets",
+      "description": "Where we learned to make a bucket that can carry lava",
+      "x": 291,
+      "y": 47,
+      "icon": {
+        "id": "terrafirmacraft:item.Blue Steel Bucket Empty"
+      },
+      "requirements": [
+        4
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Blue for hot things",
+          "longDescription": "Blue steel seems to be the only alloy strong enough to tollerate the intense heat of carrying lava.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Blue Steel Bucket Empty"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        },
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 45,
+          "amount": 8
+        }
+      ],
+      "rewardChoice": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 45,
+          "amount": 8
+        },
+        {
+          "id": "terrafirmacraft:item.coal",
+          "damage": 1,
+          "amount": 64
+        },
+        {
+          "id": "HardcoreQuesting:hearts"
+        }
+      ]
+    },
+    {
+      "name": "Shears",
+      "description": "More than just wool",
+      "x": 20,
+      "y": 69,
+      "icon": {
+        "id": "terrafirmacraft:item.shears"
+      },
+      "requirements": [
+        0
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Make two knife heads",
+          "longDescription": "Now that you know how to make wrought iron, you can make a pair of shears. Although you can shear a sheep with a knife, shears will give more. They are also a very useful tool for breaking leaves. Start by making two wrought iron knife heads",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Wrought Iron Knife Blade"
+              },
+              "required": 2,
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Work the knives together",
+          "longDescription": "Now that you have two knife heads, place both of them in your anvils work area. you should now be able to select the shears blueprint.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.shears"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 59,
+          "amount": 8
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ],
+      "rewardChoice": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 59,
+          "amount": 8
+        },
+        {
+          "id": "terrafirmacraft:item.coal",
+          "damage": 1,
+          "amount": 16
+        },
+        {
+          "id": "HardcoreQuesting:hearts"
+        }
+      ]
+    },
+    {
+      "name": "The grill",
+      "description": "Advanced cooking",
+      "x": 87,
+      "y": 67,
+      "icon": {
+        "id": "terrafirmacraft:Grill"
+      },
+      "requirements": [
+        0
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Parallel Cooking",
+          "longDescription": "The grill allows you to cook more than one food item at once but each item must be less than 80 oz. To setup the grill, place a 2 brick high pillar on the left and right of a firepit. Then place the grill directly on the pit.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:Grill"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:item.flintAndSteel"
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ],
+      "rewardChoice": [
+        {
+          "id": "terrafirmacraft:item.LooseRock",
+          "damage": 5,
+          "amount": 16
+        },
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 31,
+          "amount": 8
+        },
+        {
+          "id": "HardcoreQuesting:hearts"
+        }
+      ]
+    },
+    {
+      "name": "Non-tool making Alloys",
+      "description": "Where we learned of a few more alloys that we may need later but cannot be used for making tools",
+      "x": 53,
+      "y": 170,
+      "icon": {
+        "id": "terrafirmacraft:item.Brass Ingot"
+      },
+      "requirements": [
+        2
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Brass",
+          "longDescription": "Brass is a alloy of copper and sphalerite(zinc). It can be mixed in a crucible or pit kiln. The ratio is 88% copper to 8% zinc minimum and 92% copper to 12% zinc at maximum. So for example if you put in 450 units of copper and 50  units of zinc you will get 500 units of brass. ",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Brass Ingot"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Rose Gold",
+          "longDescription": "Rose gold is an alloy of gold and copper. It can be mixed in a crucible or pit kiln. The ratio is 70% gold to 15% copper minimum and 85% gold to 30% copper at maximum. So for example if you put in 350 units of gold and 150 units of copper you will get units of 500 rose gold. ",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Rose Gold Ingot"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
+          "description": "Sterling Silver",
+          "longDescription": "Sterling silver is an alloy of Copper and Silver. It can be mixed in a crucible or pit kiln. The ratio is 60% silver to 20% copper minimum and 80% silver to 40% copper at maximum. So for example if you put in 300 units of silver and 100 units of copper you will get 400 units of sterling silver. ",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Sterling Silver Ingot"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "amount": 8
+        },
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ],
+      "rewardChoice": [
+        {
+          "id": "terrafirmacraft:item.Rose Gold Ingot",
+          "amount": 4
+        },
+        {
+          "id": "terrafirmacraft:item.Sterling Silver Ingot",
+          "amount": 4
+        },
+        {
+          "id": "terrafirmacraft:item.Brass Ingot",
+          "amount": 4
+        },
+        {
+          "id": "HardcoreQuesting:hearts"
+        }
+      ]
+    },
+    {
+      "name": "Steel furnace",
+      "description": "Where we learned of advanced smelting technology",
+      "x": 138,
+      "y": 74,
+      "icon": {
+        "id": "minecraft:furnace"
+      },
+      "requirements": [
+        6
+      ],
+      "tasks": [
+        {
+          "type": "CRAFT",
+          "description": "Steel furnace",
+          "longDescription": "Now that we know how to make steel we can make a furnace to handle tasks like smelting cobblestone and firing clay.",
+          "items": [
+            {
+              "item": {
+                "id": "minecraft:furnace"
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        }
+      ],
+      "rewardChoice": [
+        {
+          "id": "terrafirmacraft:item.coal",
+          "damage": 1,
+          "amount": 64
+        },
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 10,
+          "amount": 16
+        },
+        {
+          "id": "HardcoreQuesting:hearts"
+        }
+      ]
+    },
+    {
+      "name": "Red Buckets",
+      "description": "Where we learned to move water",
+      "x": 231,
+      "y": 80,
+      "icon": {
+        "id": "terrafirmacraft:item.Red Steel Bucket Empty"
+      },
+      "requirements": [
+        5
+      ],
+      "tasks": [
+        {
+          "type": "DETECT",
+          "description": "Red for cold things",
+          "longDescription": "Red steel is the first metal you have found that is resilient enough hold an entire source block of water. ",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Red Steel Bucket Empty"
+              }
+            }
+          ]
+        }
+      ],
+      "reward": [
+        {
+          "id": "HardcoreQuesting:hearts",
+          "damage": 3
+        },
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 45,
+          "amount": 8
+        }
+      ],
+      "rewardChoice": [
+        {
+          "id": "terrafirmacraft:item.Ore",
+          "damage": 45,
+          "amount": 8
+        },
+        {
+          "id": "terrafirmacraft:item.coal",
+          "damage": 1,
+          "amount": 64
+        },
+        {
+          "id": "HardcoreQuesting:hearts"
+        }
+      ]
+    }
+  ]
+}
