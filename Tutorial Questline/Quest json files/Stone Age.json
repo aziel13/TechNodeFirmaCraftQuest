@@ -4,7 +4,7 @@
   "quests": [
     {
       "name": "Welcome to Terrafirmacraft",
-      "description": "Where we learn everything about minecraft has changed",
+      "description": "Where we learn everything about Minecraft has changed",
       "x": 25,
       "y": 12,
       "icon": {
@@ -14,7 +14,7 @@
         {
           "type": "DETECT",
           "description": "Picking up sticks and rocks",
-          "longDescription": "Terrafirmacraft is a total conversion that changes most of the things we know about how to play minecraft. The first thing you will want to do to survive is to go and find some sticks and rocks. Sticks and rocks can be found randomly on the ground and sticks also from breaking leaves on trees.",
+          "longDescription": "Terrafirmacraft or TFC is a total conversion that changes most of the things we know about how to play Minecraft. The first thing you will want to do to survive is to go and find some sticks and rocks. Sticks and rocks can be found randomly on the ground and sticks also from breaking leaves on trees.",
           "items": [
             {
               "item": {
@@ -55,14 +55,14 @@
         "id": "terrafirmacraft:item.LooseRock",
         "damage": 13
       },
-      "requirements": [
-        0
+      "prerequisites": [
+        "Welcome to Terrafirmacraft"
       ],
       "tasks": [
         {
           "type": "DETECT",
           "description": "Rocks into tool heads",
-          "longDescription": "To begin knapping a stone tool you need to have at least 2 rocks. Using the andesite rocks provided, right click while they are in your hotbar to open the knapping interface. The patterns for knapping are available in nei.",
+          "longDescription": "To begin knapping a stone tool you need to have a stack of least 2 rocks. Use the andesite rocks provided, right click while they are in your hotbar to open the knapping interface. The patterns for knapping are available in NEI.",
           "items": [
             {
               "item": {
@@ -75,7 +75,7 @@
         {
           "type": "CRAFT",
           "description": "Fundamental Tree Feller",
-          "longDescription": "Combine your stone axe head with a stick in your crafting slot to craft your first stone axe. In terrafirmacraft weapons now deal different types of damage. The axe deals slashing damage. Slashing damage is effective against zombies and enderman.",
+          "longDescription": "Combine your stone axe head with a stick or a bone in your crafting slot to craft your first stone axe. In TFC when you break a log in a tree the entire tree above that block will break and the leaves will instantly despawn and not drop any saplings or sticks. So be sure to collect what you need from those leave before chopping. Stone axes are key early weapons. In TFC weapons deal different types of damage. The axe deals slashing damage. Slashing damage is effective against Zombies and Enderman.",
           "items": [
             {
               "item": {
@@ -97,7 +97,7 @@
           "damage": 3
         }
       ],
-      "rewardChoice": [
+      "rewardchoice": [
         {
           "id": "terrafirmacraft:item.LooseRock",
           "damage": 12,
@@ -119,14 +119,14 @@
         "id": "terrafirmacraft:item.Small Vessel",
         "damage": 1
       },
-      "requirements": [
-        3
+      "prerequisites": [
+        "More on stone tools"
       ],
       "tasks": [
         {
           "type": "DETECT",
           "description": "Find a clay deposite",
-          "longDescription": "To find a clay deposite look for golden rod flowers on grass",
+          "longDescription": "To find a clay deposits look for golden rod flowers growing on grass. Don't bother looking for clay in dry grass areas as clay needs water to form",
           "items": [
             {
               "item": {
@@ -176,8 +176,8 @@
         },
         {
           "type": "DETECT",
-          "description": "Fire Pit Kiln",
-          "longDescription": "A fire pit kiln is made in a one block deep hole. The ground can not be dry or on a clay deposit.  Each kiln requires 8 straw and 8 logs to fire. You can place a unfired clay object by shift clicking into the hole. After you have placed up to four small items or one large item, fill the pit with 8 straw and then 8 logs. Light the logs with a fire starter to start the kiln.",
+          "description": "Pit Kiln",
+          "longDescription": "A pit kiln is made in a one block deep hole.  Each kiln requires 8 straw and 8 logs to fire. You can place a unfired clay object by shift clicking into the hole. After you have placed up to four small items or one large item, fill the pit with 8 straw and then 8 logs with right click. Light the logs with a fire starter or drop a torch onto the logs to start the kiln.",
           "items": [
             {
               "item": {
@@ -217,7 +217,7 @@
           "damage": 3
         }
       ],
-      "rewardChoice": [
+      "rewardchoice": [
         {
           "id": "terrafirmacraft:item.Jug",
           "damage": 1
@@ -233,20 +233,20 @@
     },
     {
       "name": "More on stone tools",
-      "description": "Where you learn about tools added by terrafirmacraft that you will need to know about to survive",
+      "description": "Where you learn about tools added by TFC that you will need to survive",
       "x": 98,
       "y": 11,
       "icon": {
         "id": "terrafirmacraft:item.IgIn Stone Axe"
       },
-      "requirements": [
-        1
+      "prerequisites": [
+        "Knapping 101"
       ],
       "tasks": [
         {
           "type": "CRAFT",
           "description": "Stone Javelin",
-          "longDescription": "A javelin is a throwing weapon that can also be used in melee. The javelin does piercing damage which is more effective against bears, creepers, endermen, and wolves. Skeletons are immune to piercing damage. It in general will be the best weapon to use while in the stone age.",
+          "longDescription": "A javelin is a ranged weapon that can also be used in melee. The javelin does piercing damage which is more effective against bears, Creepers, Endermen, and wolves. Skeletons are immune to piercing damage so don't bother using it against them.",
           "items": [
             {
               "item": {
@@ -259,7 +259,7 @@
         {
           "type": "CRAFT",
           "description": "Stone Knife",
-          "longDescription": "Now make a knife with the andesite rocks provided. The knife is a multipurpose tool that can cut longgrass into straw, cut the decay off food, and be used as a piercing weapon as a last resort. It is also one of the few that you can make more than one head of at a time.",
+          "longDescription": "The knife is a multi-purpose tool that can cut long grass into straw, process grains, shear sheep, split food into smaller pieces, cut the decay off food, and be used as a piercing weapon as a last resort.",
           "items": [
             {
               "item": {
@@ -272,7 +272,7 @@
         {
           "type": "CRAFT",
           "description": "Stone Hammer",
-          "longDescription": "The last tool you need to make with the andesite rocks is a stone hammer. The stone hammer is primarly used to make the stone anvil, which will be useful later. Hammers deal crushing damage, which is most effective against Enderman and Skeletons.",
+          "longDescription": "The stone hammer is primarily used to make the stone anvil, which will be useful later. Hammers deal crushing damage, which is most effective against Enderman and Skeletons. This is the only stone age weapon that are effective against skeletons.",
           "items": [
             {
               "item": {
@@ -293,7 +293,7 @@
           "damage": 3
         }
       ],
-      "rewardChoice": [
+      "rewardchoice": [
         {
           "id": "terrafirmacraft:item.Stone Knife Blade"
         },
@@ -313,29 +313,28 @@
       "icon": {
         "id": "minecraft:fish"
       },
-      "requirements": [
-        2,
-        3
+      "prerequisites": [
+        "More on stone tools",
+        "Pottery"
       ],
       "tasks": [
         {
           "type": "DETECT",
           "description": "Food",
-          "longDescription": "The world is full of wild foods. Some are dependent on the seasons, but Sea Weed is a dependable early game staple that you can find on the coasts, but the farther north you are the less likely you will see it.",
+          "longDescription": "Food is a constant concern in TFC. In early days you will need to explore to find various wild food. Crops will randomly spawn in the world, but they may not be mature and so harvesting will only give you seeds. You'll need to decide if you have time to get a farm going or you want to come back later. You'll also find many wild animals that can provide meat. Remember only deer and pheasants can respawn...slowly. Cows, chickens, pigs, sheep and horses will only ever spawn on world generation. You'll also get very little meat from animals until you raise your butchery skill. So early game seaweed is a staple food. You'll find seaweed along the coasts in salt water, but the farther north you are the less likely you will see it. Harvest it by right clicking with a knife.",
           "items": [
             {
               "item": {
                 "id": "terrafirmacraft:item.Sea Weed",
-                "nbt": "{foodWeight:40.0f,foodDecay:-21.96039f,decayTimer:2294}"
               },
-              "precision": "FUZZY"
+              "precision": "NBT_FUZZY"
             }
           ]
         },
         {
           "type": "DETECT",
           "description": "Drinkable Water",
-          "longDescription": "You need to keep yourself hydrated with fresh water. You can drink from any pond if it has cat of nine tails in it or from rivers and streams, but to carry water you will need a jug.",
+          "longDescription": "You need to keep yourself hydrated with fresh water. You can drink from any pond if it has cat of nine tails in it or from rivers and streams. Right click on fresh water, be sure you are targeting the block under or beside the water block. Sipping water is slow, but you can carry water in a jug. You can quickly fill a large amount of your hydration with a jug.",
           "items": [
             {
               "item": {
@@ -367,14 +366,14 @@
         "id": "terrafirmacraft:item.Rye Whole",
         "nbt": "{foodWeight:28.8f,foodDecay:-19.800676f,decayTimer:2763}"
       },
-      "requirements": [
-        4
+      "prerequisites": [
+        "Food and Water"
       ],
       "tasks": [
         {
           "type": "DETECT",
-          "description": "Making Grain",
-          "longDescription": "Any seedbag will do. Now you will need to find a plant and harvest it for its seeds and plants, if mature. Many plants like wheat can be found during late spring to late summer. All food is stored by its weight. Food decays over time. You can remove the decay on a food by placing it in your crafting as long as you have a knife in your invetory. You can process rye and plants like it from their wild state into rye grain by crafting the rye and knife together. Rye grain decays slower than its wild state, flour, or bread. ",
+          "description": "Crops",
+          "longDescription": "As you explore your world you will find more and more food. Berry bushes, fruit trees and crops. Mature crops will give both seed bags and a food item. The seed bag can then be planted on farmland and will slowly grow depending on a lot of factors. The food item that mature crops drop will have a weight and will decays over time causing the weight to go down. There are two shortcut keys for processing food. Hover over any food item and press D to trim decay off all food. Hover over a food item and press S to stack all of the food into max sized stacks. Decay can also be trimmed by placing food in crafting grid with a knife. If there is no decay then the food stack will be split in half. You process whole grains by crafting them with a knife giving grains and straw. It is best to store grains in this form as they have a slower decay rate. The grains can be used to feed animals or processed further to make bread. Get any seed bag to complete this quest. ",
           "items": [
             {
               "item": {
@@ -404,14 +403,14 @@
       "icon": {
         "id": "terrafirmacraft:item.Firestarter"
       },
-      "requirements": [
-        0
+      "prerequisites": [
+        "Welcome to Terrafirmacraft"
       ],
       "tasks": [
         {
           "type": "CRAFT",
           "description": "Making fires",
-          "longDescription": "The first thing you will need to make a fire pit is a fire starter.",
+          "longDescription": "The first thing you will need to make a firepit is a fire starter.",
           "items": [
             {
               "item": {
@@ -423,7 +422,7 @@
         {
           "type": "DETECT",
           "description": "Temporary lights",
-          "longDescription": "The fire pit is made by throwing 3 sticks on the ground and lighting that block by right-clicking with the firestarter. If you are succesful as firepit will appear. The firepit burns logs. If the firepit is exposed to rain it will go out. Things you want to cook go in the top rightmost slot. Place a stick in to make a torch. Torches are your early source of light, but they burn out over time or if they are exposed to rain. A torch can be relit by right clicking it with another torch.",
+          "longDescription": "The firepit is used to craft torches, cook food and more. The firepit is made by throwing 3 sticks on the ground and lighting that block by right-clicking with the firestarter. If you are successful a firepit will appear. Throw a piece of straw down with the sticks to increase the odds of a firepit forming. Once you have the firepit is formed you will need to fuel it with logs, which can be placed in the left slots or by dropping on the firepit. You'll also need to protect your firepit from rain or it will go out. Things you want to heat go in the top rightmost slot and will drop down to one of the lower slots when complete. Place a stick in to make a torch. Torches are your early source of light, but they burn out over time or if they are exposed to rain. You can relight torches by right clicking it with a lit torch, you can craft more torches by right-clicking with a stick and extinguish them by right-clicking with anything other than a torch or stick. Crafting torches in firepits or forges gives 2 torches per stick or 1 from lighting from another torch. Although firepits won't light blocks on fire we don't suggest you walk on them.",
           "items": [
             {
               "item": {
@@ -447,20 +446,20 @@
     },
     {
       "name": "Hide Bed",
-      "description": "To uncomfurtable to sleep on but useful.",
+      "description": "To uncomfortable to sleep on but useful.",
       "x": 72,
       "y": 66,
       "icon": {
         "id": "minecraft:bed"
       },
-      "requirements": [
-        3
+      "prerequisites": [
+        "More on stone tools"
       ],
       "tasks": [
         {
           "type": "DETECT",
           "description": "Primitive bedding",
-          "longDescription": "You can craft a basic bed by placing a large raw hide on two blocks of tach. To get a large raw hide you will have to kill a bear or cow. While you cant sleep on it, it will set your spawn point.",
+          "longDescription": "You can craft a basic bed by placing a large raw hide on two blocks of thatch. To get a large raw hide you will have to kill a bear or large cow. While you cant sleep on it, it will set your spawn point.",
           "items": [
             {
               "item": {
@@ -497,14 +496,14 @@
       "icon": {
         "id": "terrafirmacraft:item.Small Ore"
       },
-      "requirements": [
-        2
+      "prerequisites": [
+        "Pottery"
       ],
       "tasks": [
         {
           "type": "DETECT",
           "description": "Looking for Nuggets",
-          "longDescription": "To leave the stone age, you are going to need to find copper ore. There are three types of ore that produce copper when smelted, Native copper, malachite, and tetrahedrite. The best way to get nuggets is to explore. Mark the locations where you find them as an ore vein will be nearby. Later you can use a prospector\u0027s pick to find the vein itself. A gold pan or sluice can be used as a last resort for getting the nuggets you need. This task will accept any of the 3 types of copper.",
+          "longDescription": "To leave the stone age, you are going to need to find copper ore. There are three types of ore that produce copper when smelted, Native Copper, Malachite, and Tetrahedrite. The best way to get nuggets is to explore. Mark the locations where you find them as an ore vein will be nearby. Later you can use a prospector\u0027s pick to find the vein itself. A gold pan or sluice can be used as a last resort for getting the nuggets you need. This task will accept any of the 3 types of copper.",
           "items": [
             {
               "item": {
@@ -517,7 +516,7 @@
         {
           "type": "DETECT",
           "description": "Desperation",
-          "longDescription": "So you\u0027ve not had luck with getting enough copper for your first tool. You are desperate, well there is gold panning. Put a ceramic bowl in the crafting grid to craft a Gold Pan.  Now that you have a gold pan, you will need to sift through sand or gravel under running water to try and find bits of native copper. To do this first right click on a block of sand or gravel. Next right click in an area of running water, which is usually one where the it is moving downhill. You may also find bits of native gold or platinum as you pan. Not a terrible activity during your first few nights hiding, but be aware you will over work the chunk in time.",
+          "longDescription": "So you've not had luck with getting enough copper for your first tool. You are desperate, well there is gold panning. Put a ceramic bowl in the crafting grid to craft a Gold Pan. Now that you have a gold pan, you will need to sift through sand or gravel under running water to try and find bits of native ores. To do this first right click on a block of sand or gravel to fill the pan. Then right-click on running water. You may also find bits of native copper, gold, silver or platinum as you pan depending on your prospecting skill. Not a terrible activity during your first few nights hiding, but be aware you will overwork the chunk in time.",
           "items": [
             {
               "item": {
@@ -533,7 +532,7 @@
           "damage": 3
         }
       ],
-      "rewardChoice": [
+      "rewardchoice": [
         {
           "id": "terrafirmacraft:item.GoldPan"
         },
@@ -554,14 +553,14 @@
       "icon": {
         "id": "terrafirmacraft:item.IgEx Stone Hoe"
       },
-      "requirements": [
-        3
+      "prerequisites": [
+        "More on stone tools"
       ],
       "tasks": [
         {
           "type": "CRAFT",
           "description": "Hoes with extra modes",
-          "longDescription": "With rocks collected earlier, craft a stone hoe. The terrafirmacraft hoe has additional functionality that complements the revised farming system. With a stone hoe, using the mode change key will also let you check if a square is hydrated and if the plant on it is ready to be harvested. When you pick more mature crops it will level your agriculture skill. You may find that you have additional abilities with hoes once you leave the stone age.",
+          "longDescription": "To start your farm you'll need to knap a hoe. With the hoe till grass, not dirt, to get a farmland block full of nutrient. Unlike vanilla farmland does not need water, but farmland hydrated with fresh water will help the crops grow faster. The stone hoe, using the mode change key, will also let you check if your farmland is hydrated and if the plant on it is ready to be harvested. As you harvest more mature crops your agriculture skill will raise. This increases your chance at getting extra seeds and will unlock information on the nutrients needed for different crops and found in farmland.",
           "items": [
             {
               "item": {
@@ -581,7 +580,7 @@
           "damage": 3
         }
       ],
-      "rewardChoice": [
+      "rewardchoice": [
         {
           "id": "terrafirmacraft:item.Seeds Wheat"
         },
@@ -593,5 +592,6 @@
         }
       ]
     }
-  ]
+  ],
+  "reputation": []
 }
