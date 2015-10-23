@@ -4,19 +4,21 @@
   "quests": [
     {
       "name": "Bloomery",
-      "description": "Where we learned the secret to smelting iron",
+      "description": "Where we learned the secret to smelting iron.",
       "x": 39,
       "y": 14,
       "icon": {
         "id": "terrafirmacraft:item.Raw Iron Bloom",
         "damage": 400
       },
-      "parentRequirement": 1,
+      "prerequisites": [
+        "{Casting Age}[Bronze]"
+      ],
       "tasks": [
         {
           "type": "CRAFT",
           "description": "Making a bloomery",
-          "longDescription": "To make wrought iron you will need to make a bloomery. A bloomery is a multiblock structure. To build it place a 3x3 set of bricks on the ground, then build up one but leave in the inside and one outside block free. Next add one block on each cardinal side (nswe). This is the smallest build for a bloomery. To make it larger you can add up to two more rings to the top. Place 8 charcoal in the bottom then throw up to 20 charcoal and 20 ore in from the top. Afterwards light the bloomery with a fire-starter. In a few hours you will have a raw bloom. ",
+          "longDescription": "To make wrought iron you will need to make a bloomery. First you need to craft a bloomery block, which is crafted with 8 bronze double sheets of any type. A bloomery is a multiblock structure. To build it place a 3x3 set of bricks on the ground, then build up one but leave in the inside and one outside block free. Next add one block on each cardinal side (nswe). This is the smallest build for a bloomery. To make it larger you can increase it\u0027s height two blocks. See the TFC wiki for diagrams.",
           "items": [
             {
               "item": {
@@ -27,13 +29,28 @@
         },
         {
           "type": "DETECT",
+          "description": "Bloom",
+          "longDescription": "Place 8 charcoal in the bottom then throw an 8 ore pieces (regardless of quality) and 8 charcoal down the chimney. You can add an additional 8 ore and charcoal per extra layer for a total of 24 pieces. Afterwards light the bloomery block with a fire-starter or flint and steel. In a few hours you will have a raw bloom, which your harvest with a pick axe.",
+          "items": [
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Raw Iron Bloom",
+                "damage": 100
+              },
+              "precision": "FUZZY"
+            }
+          ]
+        },
+        {
+          "type": "DETECT",
           "description": "Working the bloom",
-          "longDescription": "Once you have a raw bloom from the bloomer, the first step is to heat it up in your furnace until it is hot enough to be worked. After this hammer the bloom into a refined bloom. Next you will need to split the bloom. The last step is to either hammer each 100 unit bar into a wrought iron bar or to melt them down in the crucible.",
+          "longDescription": "Once you have a raw bloom from the bloomery, the first step is to heat it up in your forge until it is hot enough to be worked in a bronze anvil. After this hammer the bloom into a refined bloom. Next you will need to split the bloom. The last step is to either hammer each 100 unit bar into a wrought iron bar or to melt them down in the crucible.",
           "items": [
             {
               "item": {
                 "id": "terrafirmacraft:item.Wrought Iron Ingot"
-              }
+              },
+              "precision": "NBT_FUZZY"
             }
           ]
         }
@@ -49,7 +66,7 @@
           "damage": 3
         }
       ],
-      "rewardChoice": [
+      "rewardchoice": [
         {
           "id": "terrafirmacraft:item.coal",
           "damage": 1,
@@ -74,11 +91,14 @@
       "icon": {
         "id": "terrafirmacraft:Bellows"
       },
+      "prerequisites": [
+        "{Casting Age}[The Forge]"
+      ],
       "tasks": [
         {
           "type": "CRAFT",
           "description": "Blowing alot of hot air",
-          "longDescription": "The bellows can be placed to the left or right of the forge. Right clicking will cause the forge to increase the heat temporarily on an active forge.",
+          "longDescription": "The bellows can be placed next to a firepit, forge or blast furnace. Face the direction you want it to face to place. It must be placed on top of a solid block. Right clicking will increase the heat temporarily at the cost of fuel. This does not increase the rate items heat or process in the Blast furnace.",
           "items": [
             {
               "item": {
@@ -106,6 +126,9 @@
       "icon": {
         "id": "terrafirmacraft:Crucible"
       },
+      "prerequisites": [
+        "{Casting Age}[The Forge]"
+      ],
       "tasks": [
         {
           "type": "CRAFT",
@@ -117,8 +140,7 @@
                 "id": "terrafirmacraft:item.Clay",
                 "damage": 1
               },
-              "required": 5,
-              "precision": "FUZZY"
+              "required": 5
             }
           ]
         },
@@ -130,8 +152,7 @@
             {
               "item": {
                 "id": "terrafirmacraft:Crucible"
-              },
-              "precision": "FUZZY"
+              }
             }
           ]
         }
@@ -156,26 +177,26 @@
       "icon": {
         "id": "terrafirmacraft:item.Black Steel Ingot"
       },
-      "requirements": [
-        6
+      "prerequisites": [
+        "Blast Furnace"
       ],
       "tasks": [
         {
           "type": "DETECT",
           "description": "Weak Steel",
-          "longDescription": "To make single ingot of black steel, you will first need  to get a pig iron ingot and a weak steel ingot. you will need to make an alloy of steel, nickel, and black bronze in the cruicble. the ratio is 50% steel, 15% Garnierite(nickel), and 15% black bronze minimum and 70% steel, 25% nickel, and 25% black bronze. So for example if you put in 500 units of steel, 200 units of nickel, and 200 units of black bronze you will get 900 units of weak steel.",
+          "longDescription": "To make black steel you will need to start by making weak steel in a crucible. Weak steel is an unrefined alloy of steel, nickel, and black bronze. Use NEI to see the ratios. To make single ingot of black steel, you will also need to get a pig iron ingot to weld to the weak steel ingot.",
           "items": [
             {
               "item": {
                 "id": "terrafirmacraft:item.Weak Steel Ingot"
               },
-              "precision": "FUZZY"
+              "precision": "NBT_FUZZY"
             },
             {
               "item": {
                 "id": "terrafirmacraft:item.Pig Iron Ingot"
               },
-              "precision": "FUZZY"
+              "precision": "NBT_FUZZY"
             }
           ]
         },
@@ -188,7 +209,7 @@
               "item": {
                 "id": "terrafirmacraft:item.Black Steel Ingot"
               },
-              "precision": "FUZZY"
+              "precision": "NBT_FUZZY"
             }
           ]
         }
@@ -204,7 +225,7 @@
           "amount": 8
         }
       ],
-      "rewardChoice": [
+      "rewardchoice": [
         {
           "id": "terrafirmacraft:item.Ore",
           "damage": 10,
@@ -229,20 +250,26 @@
       "icon": {
         "id": "terrafirmacraft:item.Blue Steel Ingot"
       },
-      "requirements": [
-        3
+      "prerequisites": [
+        "Black Steel"
       ],
       "tasks": [
         {
           "type": "DETECT",
           "description": "Weak Blue Steel",
-          "longDescription": "To make blue steel you will need to start by making weak blue steel in a crucible. Weak blue steel is an alloy of black steel, bismuth bronze, sterling silver, and steel. The ratio is 50% black steel, 10% bismuth bronze, 10% sterling silver, and 20% steel at the minimum and 55% black steel, 15% bismuth bronze, 15% sterling silver, and 25% steel at maximum. So for example 700 units of black steel, 200 units of bismuth bronze,  200 units of sterling silver, and 300 units of steel will get you 1400 units of weak blue steel. ",
+          "longDescription": "To make blue steel you will need to start by making weak blue steel in a crucible. Weak blue steel is an alloy of black steel, bismuth bronze, sterling silver, and steel. Use NEI to see the ratios. To make single ingot of blue steel, you will also need to get a black steel ingot to weld to the weak blue steel ingot.",
           "items": [
             {
               "item": {
                 "id": "terrafirmacraft:item.Weak Blue Steel Ingot"
               },
-              "precision": "FUZZY"
+              "precision": "NBT_FUZZY"
+            },
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Black Steel Ingot"
+              },
+              "precision": "NBT_FUZZY"
             }
           ]
         },
@@ -255,7 +282,7 @@
               "item": {
                 "id": "terrafirmacraft:item.Blue Steel Ingot"
               },
-              "precision": "FUZZY"
+              "precision": "NBT_FUZZY"
             }
           ]
         }
@@ -271,7 +298,7 @@
           "damage": 3
         }
       ],
-      "rewardChoice": [
+      "rewardchoice": [
         {
           "id": "terrafirmacraft:item.Sterling Silver Ingot",
           "amount": 8
@@ -299,26 +326,26 @@
       "icon": {
         "id": "terrafirmacraft:item.Red Steel Ingot"
       },
-      "requirements": [
-        3
+      "prerequisites": [
+        "Black Steel"
       ],
       "tasks": [
         {
           "type": "DETECT",
           "description": "Weak Red Steel",
-          "longDescription": "To make red steel you will need to start by making weak red steel in a crucible. Weak red steel is an alloy of black steel, rose gold, brass, and steel. The ratio is 50% black steel, 10% rose gold, 10% brass, and 20% steel at the minimum and 55% black steel, 15% rose gold, 15% brass, and 25% steel at maximum. So for example 700 units of black steel, 200 units of rose gold,  200 units of brass, and 300 units of steel will get you 1400 units of weak red steel. ",
+          "longDescription": "To make red steel you will need to start by making weak red steel in a crucible. Weak red steel is an alloy of black steel, rose gold, brass, and steel. Use NEI to see the ratios. To make single ingot of red steel, you will also need to get a black steel ingot to weld to the weak red steel ingot.",
           "items": [
             {
               "item": {
                 "id": "terrafirmacraft:item.Weak Red Steel Ingot"
               },
-              "precision": "FUZZY"
+              "precision": "NBT_FUZZY"
             },
             {
               "item": {
                 "id": "terrafirmacraft:item.Black Steel Ingot"
               },
-              "precision": "FUZZY"
+              "precision": "NBT_FUZZY"
             }
           ]
         },
@@ -331,7 +358,7 @@
               "item": {
                 "id": "terrafirmacraft:item.Red Steel Ingot"
               },
-              "precision": "FUZZY"
+              "precision": "NBT_FUZZY"
             }
           ]
         }
@@ -347,7 +374,7 @@
           "damage": 3
         }
       ],
-      "rewardChoice": [
+      "rewardchoice": [
         {
           "id": "terrafirmacraft:item.Brass Ingot",
           "amount": 8
@@ -375,12 +402,12 @@
       "icon": {
         "id": "terrafirmacraft:Bloomery"
       },
-      "requirements": [
-        0
+      "prerequisites": [
+        "Bloomery"
       ],
       "tasks": [
         {
-          "type": "DETECT",
+          "type": "CRAFT",
           "description": "Blast furnace ",
           "longDescription": "The blast furnance is a multiblock structure used to turn iron ore into pig iron�?.",
           "items": [
@@ -394,7 +421,7 @@
         {
           "type": "DETECT",
           "description": "Building the Chimney",
-          "longDescription": "The first part of the blast furnace you will need to build is its chimney. To start place four fire brick blocks in a cross shape around an empty block. Make sure to leave two blocks empty underneath where the blast furnace and cruicible will go. Next Place a wrought iron sheet on each side of the chimney blocks other than the top or bottom. You can extend the size of the chimney up to 6 high.",
+          "longDescription": "The first part of the blast furnace you will need to build is its chimney. To start place four fire brick blocks in a cross shape around an empty block. Make sure to leave two blocks empty underneath where the blast furnace and crucible will go. Next Place a wrought iron sheet on each side of the chimney blocks other than the top or bottom. You can extend the size of the chimney up to 6 high.",
           "items": [
             {
               "item": {
@@ -413,26 +440,31 @@
         {
           "type": "DETECT",
           "description": "Running the furnace",
-          "longDescription": "To finish the blast furnace place a cruicble and the blast furnace on top, one block �?bellow the chimney. Next put a bellows pointing twards the blast furnace. Now drop 4 charcoal, 4 iron ore, and 4 flux powder into the chimney. Light the blast furnace. When the furnace is white hot start using the bellows to increase the heat of the furnace until all the ore melts.",
+          "longDescription": "To finish the blast furnace place a crucible and the blast furnace on top, one block bellow the chimney. Next put a bellows pointing towards the blast furnace. Remember you need to place the bellows on a solid block. You will also need a tuyere, which is placed in the blast furnace GUI. The blast furnace will heat, but you will be unable to pump the pig iron out without it. The tuyere is smithed from a double metal sheet. Any kind will do. Now drop 4 charcoal, 4 iron ore, and 4 flux powder into the chimney. Light the blast furnace. Keep an eye on the blast furnace and add more charcoal if its level drops below the ore in the GUI. There is no need to pump the bellows until the pig iron has formed, you\u0027ll need to figure out when that is. Once the pig iron is formed you can pump the bellows to allow the pig iron to flow through the tuyere into the crucible.",
           "items": [
             {
               "item": {
                 "id": "terrafirmacraft:Crucible"
+              }
+            },
+            {
+              "item": {
+                "id": "terrafirmacraft:item.Wrought Iron Tuyere"
               },
-              "precision": "FUZZY"
+              "precision": "ORE_DICTIONARY"
             }
           ]
         },
         {
           "type": "DETECT",
           "description": "Processing the Pig Iron",
-          "longDescription": "Now that you have a cruicible full of pig iron, you will need to process it. Like with iron, you will need to pour out the iron from the cruicble into a ingot mold and then when its solidified, hammer out the impurities on your anvil.",
+          "longDescription": "Now that you have a crucible full of pig iron, you will need to process it. Like with iron, you will need to pour out the iron from the crucible into a ingot mold. It is best to start pouring ingots while pumping the pig iron into the crucible. When the pig iron is solid, but still hot enough, hammer out the impurities on your anvil.",
           "items": [
             {
               "item": {
                 "id": "terrafirmacraft:item.Steel Ingot"
               },
-              "precision": "FUZZY"
+              "precision": "NBT_FUZZY"
             }
           ]
         }
@@ -448,10 +480,10 @@
           "amount": 32
         }
       ],
-      "rewardChoice": [
+      "rewardchoice": [
         {
           "id": "terrafirmacraft:FireBrick",
-          "amount": 2
+          "amount": 8
         },
         {
           "id": "terrafirmacraft:item.Wrought Iron Sheet",
@@ -471,14 +503,14 @@
       "icon": {
         "id": "terrafirmacraft:item.Blue Steel Bucket Empty"
       },
-      "requirements": [
-        4
+      "prerequisites": [
+        "Blue Steel"
       ],
       "tasks": [
         {
           "type": "DETECT",
           "description": "Blue for hot things",
-          "longDescription": "Blue steel seems to be the only alloy strong enough to tollerate the intense heat of carrying lava.",
+          "longDescription": "Blue steel seems to be the only alloy strong enough to tolerate the intense heat of carrying lava.",
           "items": [
             {
               "item": {
@@ -499,7 +531,7 @@
           "amount": 8
         }
       ],
-      "rewardChoice": [
+      "rewardchoice": [
         {
           "id": "terrafirmacraft:item.Ore",
           "damage": 45,
@@ -523,21 +555,21 @@
       "icon": {
         "id": "terrafirmacraft:item.shears"
       },
-      "requirements": [
-        0
+      "prerequisites": [
+        "Bloomery"
       ],
       "tasks": [
         {
           "type": "DETECT",
           "description": "Make two knife heads",
-          "longDescription": "Now that you know how to make wrought iron, you can make a pair of shears. Although you can shear a sheep with a knife, shears will give more. They are also a very useful tool for breaking leaves. Start by making two wrought iron knife heads",
+          "longDescription": "Now that you know how to make wrought iron, you can make a pair of shears. Although you can shear a sheep with a knife, shears will give more wool. They are also a very useful tool for breaking leaves. Start by making two wrought iron knife heads",
           "items": [
             {
               "item": {
                 "id": "terrafirmacraft:item.Wrought Iron Knife Blade"
               },
               "required": 2,
-              "precision": "FUZZY"
+              "precision": "NBT_FUZZY"
             }
           ]
         },
@@ -549,8 +581,7 @@
             {
               "item": {
                 "id": "terrafirmacraft:item.shears"
-              },
-              "precision": "FUZZY"
+              }
             }
           ]
         }
@@ -566,7 +597,7 @@
           "damage": 3
         }
       ],
-      "rewardChoice": [
+      "rewardchoice": [
         {
           "id": "terrafirmacraft:item.Ore",
           "damage": 59,
@@ -590,20 +621,19 @@
       "icon": {
         "id": "terrafirmacraft:Grill"
       },
-      "requirements": [
-        0
+      "prerequisites": [
+        "Bloomery"
       ],
       "tasks": [
         {
           "type": "DETECT",
           "description": "Parallel Cooking",
-          "longDescription": "The grill allows you to cook more than one food item at once but each item must be less than 80 oz. To setup the grill, place a 2 brick high pillar on the left and right of a firepit. Then place the grill directly on the pit.",
+          "longDescription": "The grill allows you to cook more than one food item at once, but each item must be less than 80 oz. To setup the grill, place directly on a forge. Alternatively place a 2 brick high pillar on the left and right of a firepit. Then place the grill directly on the pit.",
           "items": [
             {
               "item": {
                 "id": "terrafirmacraft:Grill"
-              },
-              "precision": "FUZZY"
+              }
             }
           ]
         }
@@ -617,7 +647,7 @@
           "damage": 3
         }
       ],
-      "rewardChoice": [
+      "rewardchoice": [
         {
           "id": "terrafirmacraft:item.LooseRock",
           "damage": 5,
@@ -641,46 +671,46 @@
       "icon": {
         "id": "terrafirmacraft:item.Brass Ingot"
       },
-      "requirements": [
-        2
+      "prerequisites": [
+        "Crucible"
       ],
       "tasks": [
         {
           "type": "DETECT",
           "description": "Brass",
-          "longDescription": "Brass is a alloy of copper and sphalerite(zinc). It can be mixed in a crucible or pit kiln. The ratio is 88% copper to 8% zinc minimum and 92% copper to 12% zinc at maximum. So for example if you put in 450 units of copper and 50  units of zinc you will get 500 units of brass. ",
+          "longDescription": "Brass is a alloy of copper and sphalerite(zinc). It can be mixed in a crucible or pit kiln. The ratio is between 88% and 92% copper and between 8% and 12% zinc.",
           "items": [
             {
               "item": {
                 "id": "terrafirmacraft:item.Brass Ingot"
               },
-              "precision": "FUZZY"
+              "precision": "NBT_FUZZY"
             }
           ]
         },
         {
           "type": "DETECT",
           "description": "Rose Gold",
-          "longDescription": "Rose gold is an alloy of gold and copper. It can be mixed in a crucible or pit kiln. The ratio is 70% gold to 15% copper minimum and 85% gold to 30% copper at maximum. So for example if you put in 350 units of gold and 150 units of copper you will get units of 500 rose gold. ",
+          "longDescription": "Rose gold is an alloy of gold and copper. It can be mixed in a crucible or pit kiln. The ratio is between 70% and 85% gold and between 15% and 30% copper. ",
           "items": [
             {
               "item": {
                 "id": "terrafirmacraft:item.Rose Gold Ingot"
               },
-              "precision": "FUZZY"
+              "precision": "NBT_FUZZY"
             }
           ]
         },
         {
           "type": "DETECT",
           "description": "Sterling Silver",
-          "longDescription": "Sterling silver is an alloy of Copper and Silver. It can be mixed in a crucible or pit kiln. The ratio is 60% silver to 20% copper minimum and 80% silver to 40% copper at maximum. So for example if you put in 300 units of silver and 100 units of copper you will get 400 units of sterling silver. ",
+          "longDescription": "Sterling silver is an alloy of Copper and Silver. It can be mixed in a crucible or pit kiln. The ratio is between 60% and 80% silver and between 20% and 40% copper.",
           "items": [
             {
               "item": {
                 "id": "terrafirmacraft:item.Sterling Silver Ingot"
               },
-              "precision": "FUZZY"
+              "precision": "NBT_FUZZY"
             }
           ]
         }
@@ -695,7 +725,7 @@
           "damage": 3
         }
       ],
-      "rewardChoice": [
+      "rewardchoice": [
         {
           "id": "terrafirmacraft:item.Rose Gold Ingot",
           "amount": 4
@@ -721,8 +751,8 @@
       "icon": {
         "id": "minecraft:furnace"
       },
-      "requirements": [
-        6
+      "prerequisites": [
+        "Blast Furnace"
       ],
       "tasks": [
         {
@@ -733,8 +763,7 @@
             {
               "item": {
                 "id": "minecraft:furnace"
-              },
-              "precision": "FUZZY"
+              }
             }
           ]
         }
@@ -745,7 +774,7 @@
           "damage": 3
         }
       ],
-      "rewardChoice": [
+      "rewardchoice": [
         {
           "id": "terrafirmacraft:item.coal",
           "damage": 1,
@@ -769,8 +798,8 @@
       "icon": {
         "id": "terrafirmacraft:item.Red Steel Bucket Empty"
       },
-      "requirements": [
-        5
+      "prerequisites": [
+        "Red Steel"
       ],
       "tasks": [
         {
@@ -797,7 +826,7 @@
           "amount": 8
         }
       ],
-      "rewardChoice": [
+      "rewardchoice": [
         {
           "id": "terrafirmacraft:item.Ore",
           "damage": 45,
@@ -813,5 +842,6 @@
         }
       ]
     }
-  ]
+  ],
+  "reputation": []
 }

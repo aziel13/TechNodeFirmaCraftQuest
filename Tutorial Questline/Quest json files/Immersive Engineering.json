@@ -11,6 +11,10 @@
         "id": "ImmersiveEngineering:tool",
         "damage": 3
       },
+      "prerequisites": [
+        "{Iron Age}[Crucible]",
+        "{Iron Age}[Bloomery]"
+      ],
       "tasks": [
         {
           "type": "CRAFT",
@@ -45,8 +49,9 @@
       "icon": {
         "id": "ImmersiveEngineering:tool"
       },
-      "requirements": [
-        0
+      "prerequisites": [
+        "Immersed In Engineering",
+        "{Iron Age}[Black Steel]"
       ],
       "tasks": [
         {
@@ -73,7 +78,7 @@
           "damage": 3
         }
       ],
-      "rewardChoice": [
+      "rewardchoice": [
         {
           "id": "terrafirmacraft:item.Ore",
           "damage": 10,
@@ -99,8 +104,8 @@
         "id": "ImmersiveEngineering:stoneDecoration",
         "damage": 1
       },
-      "requirements": [
-        1
+      "prerequisites": [
+        "Engineer\u0027s Hammer"
       ],
       "tasks": [
         {
@@ -121,15 +126,14 @@
     },
     {
       "name": "Low capacity power storage",
-      "description": "Unnamed quest",
       "x": 32,
       "y": 85,
       "icon": {
         "id": "ImmersiveEngineering:metalDevice",
         "damage": 1
       },
-      "requirements": [
-        9
+      "prerequisites": [
+        "Treated Wood"
       ],
       "tasks": [
         {
@@ -140,58 +144,50 @@
     },
     {
       "name": "Early Power Generation",
-      "description": "Unnamed quest",
       "x": 136,
       "y": 84,
       "icon": {
         "id": "ImmersiveEngineering:metalDevice",
         "damage": 9
       },
-      "requirements": [
-        9
-      ],
-      "tasks": []
+      "prerequisites": [
+        "Treated Wood"
+      ]
     },
     {
       "name": "Crusher",
-      "description": "Unnamed quest",
       "x": 209,
       "y": 62,
       "icon": {
         "id": "ImmersiveEngineering:metal",
         "damage": 8
       },
-      "requirements": [
-        11
-      ],
-      "tasks": []
+      "prerequisites": [
+        "External heater"
+      ]
     },
     {
       "name": "Mining Drill",
-      "description": "Unnamed quest",
       "x": 272,
       "y": 177,
       "icon": {
         "id": "ImmersiveEngineering:drill"
       },
-      "requirements": [
-        8,
-        16
-      ],
-      "tasks": []
+      "prerequisites": [
+        "Engineers Workbench",
+        "Biodeasel"
+      ]
     },
     {
       "name": "Revolver",
-      "description": "Unnamed quest",
       "x": 288,
       "y": 45,
       "icon": {
         "id": "ImmersiveEngineering:revolver"
       },
-      "requirements": [
-        8
-      ],
-      "tasks": []
+      "prerequisites": [
+        "Engineers Workbench"
+      ]
     },
     {
       "name": "Engineers Workbench",
@@ -202,8 +198,8 @@
         "id": "ImmersiveEngineering:woodenDevice",
         "damage": 5
       },
-      "requirements": [
-        9
+      "prerequisites": [
+        "Treated Wood"
       ],
       "tasks": [
         {
@@ -235,8 +231,8 @@
       "icon": {
         "id": "ImmersiveEngineering:woodenDecoration"
       },
-      "requirements": [
-        2
+      "prerequisites": [
+        "Coke Oven"
       ],
       "tasks": [
         {
@@ -262,101 +258,87 @@
     },
     {
       "name": "Conveyor Belts",
-      "description": "Unnamed quest",
       "x": 30,
       "y": 53,
       "icon": {
         "id": "ImmersiveEngineering:metalDevice",
         "damage": 11
       },
-      "requirements": [
-        0
-      ],
-      "tasks": []
+      "prerequisites": [
+        "Immersed In Engineering"
+      ]
     },
     {
       "name": "External heater",
-      "description": "Unnamed quest",
       "x": 179,
       "y": 87,
       "icon": {
         "id": "ImmersiveEngineering:metalDevice",
         "damage": 12
       },
-      "requirements": [
-        4
-      ],
-      "tasks": []
+      "prerequisites": [
+        "Early Power Generation"
+      ]
     },
     {
       "name": "Medium capacity storage",
-      "description": "Unnamed quest",
       "x": 32,
       "y": 129,
       "icon": {
         "id": "ImmersiveEngineering:metalDevice",
         "damage": 3
       },
-      "requirements": [
-        3
-      ],
-      "tasks": []
+      "prerequisites": [
+        "Low capacity power storage"
+      ]
     },
     {
       "name": "High capacity power storage",
-      "description": "Unnamed quest",
       "x": 32,
       "y": 171,
       "icon": {
         "id": "ImmersiveEngineering:metalDevice",
         "damage": 7
       },
-      "requirements": [
-        12
-      ],
-      "tasks": []
+      "prerequisites": [
+        "Medium capacity storage"
+      ]
     },
     {
       "name": "More power Generators",
-      "description": "Unnamed quest",
       "x": 89,
       "y": 99,
       "icon": {
         "id": "ImmersiveEngineering:metalDevice",
         "damage": 10
       },
-      "requirements": [
-        4
-      ],
-      "tasks": []
+      "prerequisites": [
+        "Early Power Generation"
+      ]
     },
     {
       "name": "Biodeseal Generator",
-      "description": "Unnamed quest",
       "x": 98,
       "y": 164,
       "icon": {
         "id": "ImmersiveEngineering:metalMultiblock",
         "damage": 2
       },
-      "requirements": [
-        16
-      ],
-      "tasks": []
+      "prerequisites": [
+        "Biodeasel"
+      ]
     },
     {
       "name": "Biodeasel",
-      "description": "Unnamed quest",
       "x": 134,
       "y": 147,
       "icon": {
         "id": "ImmersiveEngineering:fluidContainers",
         "damage": 6
       },
-      "requirements": [
-        4
-      ],
-      "tasks": []
+      "prerequisites": [
+        "Early Power Generation"
+      ]
     },
     {
       "name": "Excavator",
@@ -366,10 +348,9 @@
       "icon": {
         "id": "minecraft:iron_ore"
       },
-      "requirements": [
-        15
-      ],
-      "tasks": []
+      "prerequisites": [
+        "Biodeseal Generator"
+      ]
     },
     {
       "name": "Arc Frunace",
@@ -379,10 +360,10 @@
       "icon": {
         "id": "ImmersiveEngineering:graphiteElectrode"
       },
-      "requirements": [
-        15
-      ],
-      "tasks": []
+      "prerequisites": [
+        "Biodeseal Generator"
+      ]
     }
-  ]
+  ],
+  "reputation": []
 }

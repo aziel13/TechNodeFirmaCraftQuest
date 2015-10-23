@@ -1,13 +1,12 @@
 {
   "name": "LockSet",
-  "description": "No description",
   "quests": [
     {
       "name": "LockQuest",
       "description": "Using this to hide unfinished chapters until ready.",
       "x": 36,
-      "y": 25,
-      "tasks": []
+      "y": 25
     }
-  ]
+  ],
+  "reputation": []
 }
