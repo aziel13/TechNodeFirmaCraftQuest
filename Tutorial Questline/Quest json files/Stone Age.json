@@ -721,7 +721,7 @@
                 "id": "terrafirmacraft:item.Salad",
                 "nbt": "{foodWeight:0.0f,foodDecay:0.0f,FG:[-1,-1,-1,-1,],decayTimer:2161}"
               },
-              "precision": "NBT_FUZZY"
+              "precision": "FUZZY"
             }
           ]
         }

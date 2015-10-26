@@ -784,7 +784,7 @@
                 "damage": 3,
                 "nbt": "{foodWeight:7.0f,foodDecay:-24.0f,FG:[30026,2,10001,-1,-1,],tasteSalty:10,tasteBitter:22,decayTimer:2886,tasteUmami:81,tasteSour:6,decayRate:2.0f,tasteSweet:12,mealSkill:0}"
               },
-              "precision": "NBT_FUZZY"
+              "precision": "FUZZY"
             }
           ]
         }
